@@ -30,7 +30,7 @@ class qa_custome_no_loggin_ask_page_admin
 		$fields = array();
 
 		$fields[] = array(
-			'label' => 'CUSTOM HTML',
+			'label' => qa_lang('no_loggin_ask_page/custom_html'),
 			'tags' => 'NAME="qa_custome_no_loggin_ask_page_html"',
 			'value' => qa_opt('qa_custome_no_loggin_ask_page_html'),
 			'type' => 'textarea',
