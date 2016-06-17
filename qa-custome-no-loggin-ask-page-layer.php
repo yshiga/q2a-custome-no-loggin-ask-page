@@ -7,7 +7,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 	{
 		if(!qa_is_logged_in() && $template=='ask')
 		{
-			$html = "<h1>Please log in.</h1>";
+			$html = qa_opt("qa_custome_no_loggin_ask_page_html");
 			$content["custom"] = $html;
 		}
 		qa_html_theme_base::__construct($template, $content, $rooturl, $request);
