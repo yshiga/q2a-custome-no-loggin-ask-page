@@ -18,6 +18,7 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 	exit;
 }
 
+qa_register_plugin_layer('qa-custome-no-loggin-ask-page-layer.php', 'Custom No Loggin Ask Page');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
