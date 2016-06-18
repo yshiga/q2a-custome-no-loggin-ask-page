@@ -18,6 +18,12 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 	exit;
 }
 
+// language file
+qa_register_plugin_phrases('qa-custome-no-loggin-ask-page-lang-*.php', 'no_loggin_ask_page');
+// admin
+qa_register_plugin_module('module', 'qa-custome-no-loggin-ask-page-admin.php', 'qa_custome_no_loggin_ask_page_admin', 'Custom No Loggin Ask Page Admin');
+// layer
+qa_register_plugin_layer('qa-custome-no-loggin-ask-page-layer.php', 'Custom No Loggin Ask Page');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
